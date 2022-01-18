@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+// option java_multiple_files = true;
+option java_package = "com.cloudside.bqprotodemo";
+option java_outer_classname = "StudentDetailsProto";
+
+package bqprotodemo;
+
+message Students {
+  string name = 1;
+  int32 id = 2;    
+  int32 age = 3;
+
+  message Subjects {
+    int32 id = 1;    
+    string name = 2;
+    int32 marksObtained = 3; 
+    int32 maxMarks = 4;
+
+    message Teachers {
+      int32 id = 1;    
+      string name = 2;
+    }
+    
+    Teachers teacher = 5; 
+  }
+  
+  repeated Subjects subject = 4; 
+  string enrollTime = 5;
+}

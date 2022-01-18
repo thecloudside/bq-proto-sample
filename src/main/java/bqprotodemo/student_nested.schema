@@ -1,0 +1,66 @@
+[
+ {
+  "name": "name",
+  "type": "STRING",
+  "mode": "NULLABLE"
+ },
+ {
+  "name": "id",
+  "type": "INTEGER",
+  "mode": "NULLABLE"
+ },
+ {
+  "name": "age",
+  "type": "INTEGER",
+  "mode": "NULLABLE"
+ },
+ {
+  "name": "subject",
+  "type": "RECORD",
+  "mode": "REPEATED",
+  "fields": [
+   {
+    "name": "id",
+    "type": "INTEGER",
+    "mode": "NULLABLE"
+   },
+   {
+    "name": "name",
+    "type": "STRING",
+    "mode": "NULLABLE"
+   },
+   {
+    "name": "marksObtained",
+    "type": "INTEGER",
+    "mode": "NULLABLE"
+   },
+   {
+    "name": "maxMarks",
+    "type": "INTEGER",
+    "mode": "NULLABLE"
+   },
+   {
+    "name": "teacher",
+    "type": "RECORD",
+    "mode": "NULLABLE",
+    "fields": [
+     {
+      "name": "id",
+      "type": "INTEGER",
+      "mode": "NULLABLE"
+     },
+     {
+      "name": "name",
+      "type": "STRING",
+      "mode": "NULLABLE"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "name": "enrollTime",
+  "type": "STRING",
+  "mode": "NULLABLE"
+ }
+]
