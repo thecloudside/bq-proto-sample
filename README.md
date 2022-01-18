@@ -1,3 +1,5 @@
+Code sample for the usecase in this blog - https://blog.thecloudside.com/how-to-bigquery-protobuf-streaming-inserts-using-java-c92c080fb76e
+
 # Google BigQuery Streaming Inserts
 
 Java code for Streaming Inserts - CommittedWrite and ParallelWriteCommitted. This uses sample code from Google BQ Java repository [https://github.com/googleapis/java-bigquerystorage/tree/main/samples/snippets](https://github.com/googleapis/java-bigquerystorage/tree/main/samples/snippets)
